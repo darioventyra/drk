@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que es lo que hago?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 5%;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: red;
+        }
+        .cat-image {
+            display: none;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¿Qué es lo que hago?</h1>
+    <button onclick="mostrarMensaje()">Presiona aquí</button>
+    <div id="message"></div>
+    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-08/9/11/asset/buzzfeed-prod-web-05/sub-buzz-22309-1533828599-5.jpg?downsize=600:*&output-format=auto&output-quality=auto" class="cat-image" id="cat1" alt="Gatito negro 1">
+    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-08/9/12/asset/buzzfeed-prod-web-06/sub-buzz-4352-1533831253-3.jpg?downsize=600:*&output-format=auto&output-quality=auto" class="cat-image" id="cat2" alt="Gatito negro 2">
+    <img src="https://scontent.faqp5-2.fna.fbcdn.net/v/t39.30808-6/363429055_613258867463857_7031608263561484353_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=X71t9-vHMdQQ7kNvgFDlOgQ&_nc_zt=23&_nc_ht=scontent.faqp5-2.fna&oh=00_AYDMLn4Qo8pd1wScW9uSWOR5yMCd-Wr9HDRl68eTAVPOfA&oe=666D330C" class="cat-image" id="cat3" alt="Gatito negro 3">
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('message').textContent = 'Pues ando creando código para páginas web jejeje, es divertido. Procedo a enviar muchas fotos de gatitos jejej';
+            document.getElementById('cat1').style.display = 'block';
+            document.getElementById('cat2').style.display = 'block';
+            document.getElementById('cat3').style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>
